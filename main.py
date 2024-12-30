@@ -25,10 +25,10 @@ def predict():
 
     # Set locale to Indian numbering system
     try:
-    locale.setlocale(locale.LC_ALL, 'en_IN.UTF-8')
+        locale.setlocale(locale.LC_ALL, 'en_IN.UTF-8')
     except locale.Error:
     # Fallback to en_US if en_IN is not available
-    locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
+        locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
     formatted_prediction = locale.format_string("%.2f", prediction, grouping=True)
 
