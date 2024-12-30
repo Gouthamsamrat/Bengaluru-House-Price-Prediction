@@ -1,0 +1,7 @@
+flask
+joblib
+scikit-learn == 1.5.1
+pandas == 2.2.2
+numpy
+xgboost
+gunicorn
